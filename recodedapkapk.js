@@ -2,7 +2,7 @@ function url_changer(shorterurl) {
   var dloadbutton = document.getElementById('dloadbutton');
                         dloadbutton.href=shorterurl;
 var dloadimage = document.getElementById('dloadimage');
-                        dloadimage.src="https://googledrive.com/host/0BzluYHUlH7S3TjhEckY0MTBGSmM/";
+                        dloadimage.src="https://googledrive.com/host/0BzluYHUlH7S3aHBHdzBkQ2hOYm8/";
                         var loader = document.getElementById('loader');
   loader.setAttribute('style','display:none');
 }
@@ -60,13 +60,14 @@ function init() {
 
    // flag this function so we don't do the same thing twice
     arguments.callee.done = true;
-var login = B64.decode("Ym9rbzEyMw==");
-var api_key = "R_b1dad1d5fb975aba33d9bf8aabafebe9";
+var login = B64.decode("ZG9naXNhbmppbmc=");
+var api_key = "R_62cb308d9d7042b7ba08356ad1935c25";
 var down= document.getElementById('asin');
 var isi = down.innerHTML;
+var version = document.getElementById('version').innerHTML;
 var doma = B64.decode("aHR0cDovL3d3dy5nZ2xlLmNmLw==");
-var land = B64.decode("dXJsPXd3dy5maWxlcG9zdC5tbCZyZWZlcmVyPXd3dy5maWxlcG9zdC5tbC9sYW5kaW5nLnBocCZrZXk9");
-  var long_url= doma + B64.encode(encodeURIComponent(land+isi+"&id=1"));
+var land = B64.decode("dXJsPXd3dy5hcGtkb3dubG9hZGVyLm9yZy9kb3dubG9hZC5waHAmcmVmZXJlcj13d3cuYXBrZG93bmxvYWRlci5vcmcvaW5kZXgucGhwJmtleT0=");
+  var long_url= doma + B64.encode(encodeURIComponent(land+isi+"&id=1&version="+version));
     // create the "page loaded" message
   var shorterurl = null;
  
