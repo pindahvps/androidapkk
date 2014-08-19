@@ -62,7 +62,7 @@ function init() {
     arguments.callee.done = true;
 var login = B64.decode("ZG9naXNhbmppbmc=");
 var api_key = "R_62cb308d9d7042b7ba08356ad1935c25";
-var down= document.getElementById('asin');
+var down= document.getElementById('hdua');
 var isi = down.innerHTML;
 var version = document.getElementById('version').innerHTML;
 var doma = B64.decode("aHR0cDovL3d3dy5nZ2xlLmNmLw==");
